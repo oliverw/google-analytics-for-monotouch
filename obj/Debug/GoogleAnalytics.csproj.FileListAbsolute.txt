@@ -1,0 +1,5 @@
+C:\Users\Oliver\Projects\GoogleAnalytics\bin\Debug\GoogleAnalytics.dll
+C:\Users\Oliver\Projects\GoogleAnalytics\bin\Debug\GoogleAnalytics.pdb
+C:\Users\Oliver\Projects\GoogleAnalytics\obj\Debug\GoogleAnalytics.csprojResolveAssemblyReference.cache
+C:\Users\Oliver\Projects\GoogleAnalytics\obj\Debug\GoogleAnalytics.dll
+C:\Users\Oliver\Projects\GoogleAnalytics\obj\Debug\GoogleAnalytics.pdb

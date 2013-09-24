@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C82BF345-37AC-42E8-A489-204923D291CC}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GoogleAnalytics</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>GoogleAnalytics</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;IOS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <DefineConstants>IOS</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="GoogleAnalytics.Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GoogleAnalytics.Common\AnalyticsEngine.cs">
+      <Link>AnalyticsEngine.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\EasyTracker.cs">
+      <Link>EasyTracker.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\EasyTrackerConfig.cs">
+      <Link>EasyTrackerConfig.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\GAServiceManager.cs">
+      <Link>GAServiceManager.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\Payload.cs">
+      <Link>Payload.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\PayloadFactory.cs">
+      <Link>PayloadFactory.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\TokenBucket.cs">
+      <Link>TokenBucket.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\Tracker.cs">
+      <Link>Tracker.cs</Link>
+    </Compile>
+    <Compile Include="GoogleAnalytics.Common\Transactions.cs">
+      <Link>Transactions.cs</Link>
+    </Compile>
+    <Compile Include="AnalyticsEngine.cs">
+      <Link>AnalyticsEngine.cs</Link>
+    </Compile>
+    <Compile Include="EasyTracker.cs">
+      <Link>EasyTracker.cs</Link>
+    </Compile>
+    <Compile Include="PlatformInfoProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reachability .cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,1 @@
+This project is a straight Monotouch port of the Google Analytics SDK for Windows to hosted on codeplex -  https://googleanalyticssdk.codeplex.com/
