@@ -3,16 +3,13 @@ using System.IO.IsolatedStorage;
 using System.Windows;
 using System.Drawing;
 using MonoTouch.Foundation;
+using MonoTouch.UIKit;
 
 namespace GoogleAnalytics
 {
     public sealed class PlatformInfoProvider
     {
         const string Key_AnonymousClientId = "GoogleAnaltyics.AnonymousClientId";
-
-        public event EventHandler ViewPortResolutionChanged;
-
-        public event EventHandler ScreenResolutionChanged;
 
         public string AnonymousClientId
         {
@@ -33,17 +30,17 @@ namespace GoogleAnalytics
 
         public Size? ScreenResolution
         {
-            get { return new Size(480, 800); }
+            get { return new Size((int)UIScreen.MainScreen.Bounds.Width, (int) UIScreen.MainScreen.Bounds.Height); }
         }
 
         public Size? ViewPortResolution
         {
-            get { return new Size(480, 800); }
+            get { return new Size((int)UIScreen.MainScreen.Bounds.Width, (int)UIScreen.MainScreen.Bounds.Height); }
         }
 
         public string UserLanguage
         {
-            get { return System.Globalization.CultureInfo.CurrentUICulture.Name; }
+            get { return NSLocale.PreferredLanguages[0]; }
         }
 
         public int? ScreenColorDepthBits
@@ -57,6 +54,7 @@ namespace GoogleAnalytics
         }
 
         public void OnTracking()
-        { }
+        {
+        }
     }
 }
