@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAnalytics", "GoogleAnalytics.csproj", "{C82BF345-37AC-42E8-A489-204923D291CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAnalytics.Tests", "GoogleAnalytics.Tests\GoogleAnalytics.Tests.csproj", "{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Release|iPhone.ActiveCfg = Release|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Release|iPhone.Build.0 = Release|iPhone
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{680B48B2-F12B-44A7-BD6A-74AFCA5CE09C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Release|iPhone.Build.0 = Release|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C82BF345-37AC-42E8-A489-204923D291CC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = GoogleAnalytics.Tests\GoogleAnalytics.Tests.csproj
+	EndGlobalSection
+EndGlobal
