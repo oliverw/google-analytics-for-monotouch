@@ -11,6 +11,11 @@ namespace GoogleAnalytics
     {
         const string Key_AnonymousClientId = "GoogleAnaltyics.AnonymousClientId";
 
+        public event EventHandler ViewPortResolutionChanged;
+
+        public event EventHandler ScreenResolutionChanged;
+
+
         public string AnonymousClientId
         {
             get
