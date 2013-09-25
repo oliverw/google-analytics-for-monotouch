@@ -7,7 +7,7 @@ The library assumes that you have a file "analytics.xml" in the root of your mai
 ### Source Code Structure
 
 Everything under **GoogleAnalytics.Common** has been copied verbatim from the original project and should be updated and maintained accordingly.  
-ä## Caveats
+## Caveats
 
 Since UIAppDelegate does not expose any .Net style application lifecycle events, you will need to call the associated methods (OnApplicationActivated and OnApplicationDeactivated) of the EasyTracker object yourself if you want to track the lifecycle using Google Analytics. 
 
