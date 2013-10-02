@@ -251,7 +251,8 @@ namespace GoogleAnalytics
         static HttpClient GetHttpClient()
         {
             var result = new HttpClient();
-            result.DefaultRequestHeaders.UserAgent.ParseAdd(UserAgent);
+            if(!result.DefaultRequestHeaders.TryAddWithoutValidation("user-agent", UserAgent))
+                Console.WriteLine("** GAServiceManager: Failed to add user agent header!");
             return result;
         }
 
