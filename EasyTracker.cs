@@ -6,6 +6,7 @@ using System.Xml;
 using MonoTouch.UIKit;
 using System.IO;
 using MonoTouch.Foundation;
+using System.Reflection;
 
 namespace GoogleAnalytics
 {
@@ -51,12 +52,15 @@ namespace GoogleAnalytics
             if (string.IsNullOrEmpty(Config.AppName))
             {
                 var infoDictionary = NSBundle.MainBundle.InfoDictionary;
-                Config.AppName = infoDictionary.ObjectForKey(new NSString("CFBundleDisplayName")).ToString();
+                var appname = infoDictionary.ObjectForKey(new NSString("CFBundleDisplayName"));
+                Config.AppName = appname != null ? appname.ToString() : Assembly.GetEntryAssembly().GetName().Name;
             }
+
             if (string.IsNullOrEmpty(Config.AppVersion))
             {
                 var infoDictionary = NSBundle.MainBundle.InfoDictionary;
-                Config.AppVersion = infoDictionary.ObjectForKey(new NSString("CFBundleShortVersionString")).ToString();
+                var shortVersionString = infoDictionary.ObjectForKey(new NSString("CFBundleShortVersionString"));
+                Config.AppVersion = shortVersionString != null ? shortVersionString.ToString() : "0.0";
             }
         }
 
