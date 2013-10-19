@@ -104,7 +104,7 @@ namespace GoogleAnalytics
 
         bool reportingException = false;
 
-        async public void OnApplicationUnhandledException(Exception ex)
+        async public Task OnApplicationUnhandledException(Exception ex)
         {
             if (!reportingException)
             {
