@@ -1,7 +1,7 @@
 using System;
 using NUnit.Framework;
-using System.Drawing;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using UIKit;
 
 namespace GoogleAnalytics.Tests
 {
@@ -33,7 +33,7 @@ namespace GoogleAnalytics.Tests
         public void config_screen_information()
         {
             var tracker = GoogleAnalytics.EasyTracker.GetTracker();
-            Assert.AreEqual(tracker.AppScreen.Value, new Size((int)UIScreen.MainScreen.Bounds.Width, (int) UIScreen.MainScreen.Bounds.Height));
+            Assert.AreEqual(tracker.AppScreen.Value, new CGSize((int)UIScreen.MainScreen.Bounds.Width, (int) UIScreen.MainScreen.Bounds.Height));
         }
     }
 }

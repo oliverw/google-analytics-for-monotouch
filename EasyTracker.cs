@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Xml;
-using MonoTouch.UIKit;
+using UIKit;
 using System.IO;
-using MonoTouch.Foundation;
+using Foundation;
 using System.Reflection;
 
 namespace GoogleAnalytics

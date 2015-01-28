@@ -1,7 +1,7 @@
-﻿using System.IO.IsolatedStorage;
+using System.IO.IsolatedStorage;
 using System.Windows;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using Foundation;
+using UIKit;
 using System.Threading.Tasks;
 
 namespace GoogleAnalytics

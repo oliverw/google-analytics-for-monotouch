@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Xml;
-using MonoTouch.UIKit;
+using UIKit;
 using System.Windows;
 using System.Threading.Tasks;
 
