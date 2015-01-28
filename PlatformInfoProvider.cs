@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.IO.IsolatedStorage;
 using System.Windows;
-using System.Drawing;
-using MonoTouch.Foundation;
-using MonoTouch.UIKit;
+using CoreGraphics;
+using Foundation;
+using UIKit;
 
 namespace GoogleAnalytics
 {
@@ -33,14 +33,14 @@ namespace GoogleAnalytics
             }
         }
 
-        public Size? ScreenResolution
+        public CGSize? ScreenResolution
         {
-            get { return new Size((int)UIScreen.MainScreen.Bounds.Width, (int) UIScreen.MainScreen.Bounds.Height); }
+            get { return new CGSize((int)UIScreen.MainScreen.Bounds.Width, (int) UIScreen.MainScreen.Bounds.Height); }
         }
 
-        public Size? ViewPortResolution
+        public CGSize? ViewPortResolution
         {
-            get { return new Size((int)UIScreen.MainScreen.Bounds.Width, (int)UIScreen.MainScreen.Bounds.Height); }
+            get { return new CGSize((int)UIScreen.MainScreen.Bounds.Width, (int)UIScreen.MainScreen.Bounds.Height); }
         }
 
         public string UserLanguage

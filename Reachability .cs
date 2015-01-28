@@ -1,4 +1,4 @@
-﻿using MonoTouch.SystemConfiguration;
+using SystemConfiguration;
 using System.Threading.Tasks;
 
 namespace GoogleAnalytics

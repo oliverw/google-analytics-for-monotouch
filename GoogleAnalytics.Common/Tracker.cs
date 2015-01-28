@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Drawing;
+using CoreGraphics;
 
 
 #if NETFX_CORE
@@ -89,7 +89,7 @@ namespace GoogleAnalytics
             set { engine.AppVersion = value; }
         }
 
-        public Size? AppScreen
+        public CGSize? AppScreen
         {
             get { return engine.ViewportSize; }
             set { engine.ViewportSize = value; }

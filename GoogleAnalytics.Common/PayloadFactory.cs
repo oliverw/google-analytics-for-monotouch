@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Globalization;
-using System.Drawing;
+using CoreGraphics;
 
 
 #if NETFX_CORE
@@ -30,14 +30,14 @@ namespace GoogleAnalytics
         public bool AnonymizeIP { get; set; }
         public IDictionary<int, string> CustomDimensions { get; set; }
         public IDictionary<int, int> CustomMetrics { get; set; }
-        public Size? ViewportSize { get; set; }
+        public CGSize? ViewportSize { get; set; }
         // TODO: unused
         public string Referrer { get; set; }
         public string Campaign { get; set; }
         public string ScreenName { get; set; }
 
         public string AnonymousClientId { get; set; }
-        public Size? ScreenResolution { get; set; }
+        public CGSize? ScreenResolution { get; set; }
         public string UserLanguage { get; set; }
         public int? ScreenColorDepthBits { get; set; }
         public string DocumentEncoding { get; set; }
